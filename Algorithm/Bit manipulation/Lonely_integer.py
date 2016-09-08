@@ -2,7 +2,8 @@
 def lonelyinteger(a):
     answer = 0
     for x in a:
-        answer=answer^x
+#We use ^ ( Bitwise exclusive)        
+        answer=answer^x     
     return answer
 if __name__ == '__main__':
     a = input()
