@@ -1,0 +1,15 @@
+#!/bin/python
+import sys
+
+
+n = int(raw_input().strip())
+myStick = [int(x) for x in raw_input().split()]
+lilStick=0
+count=-100
+myStick=sorted(myStick)
+while count <= len(myStick):
+    myStick = [x for x in myStick if x != lilStick]
+    lilStick= min(myStick)
+    myStick=sorted(myStick)
+    print len(myStick)
+   
