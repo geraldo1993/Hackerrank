@@ -1,4 +1,4 @@
-@SanjayDeepu (author)
+
 
 numberOfTestCases = int(raw_input())
 op = []
