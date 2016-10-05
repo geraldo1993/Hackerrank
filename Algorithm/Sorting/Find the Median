@@ -1,0 +1,14 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+def median(data_set):
+    data_set = sorted(data_set)
+    if len(data_set) < 1:
+            return None
+    if len(data_set) %2 == 1:
+            return data_set[((len(data_set)+1)/2)-1]
+    else:
+            return float(sum(data_set[(len(data_set)/2)-1:(len(data_set)/2)+1]))/2.0
+        
+n = int(raw_input().strip())
+Set = map(int,raw_input().strip().split(' '))
+Set.sort()
+print median (Set)
